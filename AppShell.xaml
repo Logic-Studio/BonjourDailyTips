@@ -3,12 +3,12 @@
     x:Class="BonjourDailyTips.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:BonjourDailyTips"
+    xmlns:views="clr-namespace:BonjourDailyTips.Views"
     Shell.FlyoutBehavior="Disabled">
+    <TabBar>
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        <ShellContent Title="今天" ContentTemplate="{DataTemplate views:TodayPage}" Icon="ic_fluent_heart_24_filled.png" />
+        <ShellContent Title="设置" ContentTemplate="{DataTemplate views:TodayPage}" Icon="ic_fluent_settings_24_filled.png" />
 
+    </TabBar>
 </Shell>
